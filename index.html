@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Controle de Finanças</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <main>
+        <div class="resume">
+            <div>
+                Entradas: R$
+                <Span class="incomes">0.00</Span>
+            </div>
+            <div>
+                Saídas: R$
+                <Span class="expenses">0.00</Span>
+            </div>
+            <div>
+                Total: R$
+                <Span class="total">0.00</Span>
+            </div>
+        </div>
+        <div class="newItem">
+            <div class="divDesc">
+                <label for="desc">Descrição</label>
+                <input type="text" id="desc">
+            </div>
+            <div class="divAmount">
+                <label for="amount">Valor</label>
+                <input type="number" id="amount">
+            </div>
+            <div class="divType">
+                <label for="type">Tipo</label>
+                <select id="type">
+                    <option>Entrada</option>
+                    <option>Saída</option>
+                </select>
+            </div>
+            <button id="btnNew">Incluir</button>
+        </div>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th class="columnAmount">Valor</th>
+                        <th class="columnType">Tipo</th>
+                        <th class="columnAction"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <div class="left">
+            <h4 class="title-footer">Israel <span>Pontes</span></h4>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/israel-pontes-6a3935219/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/raelpnts/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/Israelpsilva8246" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+                    <p class="Copyright">Copyright &copy; 2023 Controle de Finanças - Todos os Direitos Reservados.</p>
+        </div><!--Left-->
+        <div class="right">
+            <h4 class="title-footer">Contato</h4>
+            <form action="https://formsubmit.co/pontesisrael67@gmail.com" method="post">
+                <input type="text" name="nome" placeholder="Nome" required=""/>
+                <input type="email" name="email" placeholder="E-mail" required=""/>
+                <input type="text" name="assunto" placeholder="assunto" required=""/>
+                <textarea name="messagem" placeholder="Messagem" required=""></textarea>
+                <button class="btn">Enviar</button>
+
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <input type="text" name="_honey" style="display: none">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div><!--Right-->
+    </footer>
+</body>
+
+</html>
